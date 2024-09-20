@@ -1,0 +1,44 @@
+@model CrudDotNet8.Models.Contacto
+
+@{
+    ViewData["Title"] = "Detalle";
+}
+
+<h1 class="text-center">Contacto con .NET 8 (.NET Core MVC)</h1>
+
+<div class="row">
+    <div class="offset-12">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h3 class="text-white"><strong>Detalle </strong></h3>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="tblUsuarios">
+                        <thead>
+                        <tr>
+                            <th>@Html.DisplayNameFor(m => m.Id)</th>
+                            <th>@Html.DisplayNameFor(m => m.Nombre)</th>
+                            <th>@Html.DisplayNameFor(m => m.Telefono)</th>
+                            <th>@Html.DisplayNameFor(m => m.Celular)</th>
+                            <th>@Html.DisplayNameFor(m => m.Email)</th>
+                            <th>@Html.DisplayNameFor(m => m.FechaCreacion)</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>@Html.DisplayFor(m=>m.Id)</td>
+                            <td>@Html.DisplayFor(m => m.Nombre)</td>
+                            <td>@Html.DisplayFor(m => m.Telefono)</td>
+                            <td>@Html.DisplayFor(m => m.Celular)</td>
+                            <td>@Html.DisplayFor(m => m.Email)</td>
+                            <td>@Html.DisplayFor(m => m.FechaCreacion)</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <a asp-action="Index" asp-controller="Inicio">Volver</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
